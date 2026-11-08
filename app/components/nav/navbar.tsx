@@ -16,16 +16,17 @@ const NavBar = () => {
     }
 
     return (
+        <div className="mb-16">
         <nav className="fixed w-full h-16 not-dark:shadow-xl bg-cyan-950 flex items-center gap-x-4">
             <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
                 <div className="flex items-center">
                     <LogoLink/>
                     <div className="gap-x-6 pl-10 hidden sm:flex">
-                        <Link href={"/runs"} className="cursor-pointer text-lg font-semibold uppercase hover:border-b text-cyan-700">Runs</Link>
-                        <Link href={"/info"} className="cursor-pointer text-lg font-semibold uppercase hover:border-b text-cyan-700">Info</Link>
+                    <Link href={"/runs"} className="cursor-pointer text-lg font-semibold uppercase hover:border-b text-cyan-700">Runs</Link>
+                    <Link href={"/info"} className="cursor-pointer text-lg font-semibold uppercase hover:border-b text-cyan-700">Info</Link>
                     </div>
                     <div onClick={handleNav} className="sm:hidden cursor-pointer pl-10">
-                        <AiOutlineBars size={25}/>
+                    <AiOutlineBars size={25}/>
                     </div>
                 </div>
                 <AccountPFP/>
@@ -41,20 +42,13 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className="flex flex-col gap-y-8">
-                    <LogoLink/>
-                    <Link onClick={() => setMenuOpen(false)} href={"/runs"} className="cursor-pointer text-lg font-semibold uppercase hover:border-b text-cyan-700">Runs</Link>
-                    <Link onClick={() => setMenuOpen(false)} href={"/info"} className="cursor-pointer text-lg font-semibold uppercase hover:border-b text-cyan-700">Info</Link>
+                <LogoLink/>
+                <Link onClick={() => setMenuOpen(false)} href={"/runs"} className="cursor-pointer text-lg font-semibold uppercase hover:border-b text-cyan-700">Runs</Link>
+                <Link onClick={() => setMenuOpen(false)} href={"/info"} className="cursor-pointer text-lg font-semibold uppercase hover:border-b text-cyan-700">Info</Link>
                 </div>
             </div>
-            {/* <Link href="/">
-                <div className="flex items-center">    
-                    <Image src="/logo.png" alt="logo" width={32} height={32} unoptimized className="pixel size-8 shrink max-w-sm" loading="eager" preload/>
-                    <h1 className="text-xl font-sans font-medium text-cyan-500">Gallop</h1>
-                </div>
-            </Link>
-            <Link href={"/runs"} className="text-lg font-semibold text-cyan-700">Runs</Link>
-            <Link href={"/info"} className="text-lg font-semibold text-cyan-700">Info</Link> */}
         </nav>
+        </div>
     );
 }
 

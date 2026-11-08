@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Profile from "../../assets/pfp.png"
+import Profile from "../../../assets/pfp.png"
 
 const AccountPFP = () => {
     return (
