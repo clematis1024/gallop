@@ -14,16 +14,16 @@ export default async function Home() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-background p-4 antialiased">
       <div className="w-full max-w-md">
-        <div className="relative bg-card/80 backdrop-blur-xl text-card-foreground rounded-2xl border border-border/50 shadow-2xl overflow-hidden h-[550px] max-h-5/6 grid grid-rows-[auto_1fr_auto]">
-          <div className="relative w-full overflow-hidden h-[250px]">
-            <Image
+        <div className="relative bg-card/80 backdrop-blur-xl text-card-foreground rounded-2xl border border-border/50 shadow-2xl overflow-hidden h-137.5 max-h-5/6 grid grid-rows-[auto_1fr_auto]">
+          <div className="relative w-full overflow-hidden h-62.5">
+            {/* <Image
               src="/header.webp"
               alt="Bun + Next.js"
               className="w-full h-full object-cover object-center"
               width={400}
               height={250}
               priority
-            />
+            /> */}
             <div className="absolute top-3 right-3 bg-zinc-800/75 text-white text-xs font-medium px-2.5 py-1.5 rounded-md shadow-2xl backdrop-blur-sm">
               <div className="flex items-center gap-1.5">
                 <div className="w-2 h-2 bg-[#39FF14] rounded-full animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.8)]"></div>
@@ -34,7 +34,7 @@ export default async function Home() {
                   href={`https://github.com/oven-sh/bun/releases/tag/bun-v${bunInfo.version}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[10px] font-mono mt-0.5 opacity-90 pl-[18px] hover:opacity-100 transition-opacity"
+                  className="text-[10px] font-mono mt-0.5 opacity-90 pl-4.5 hover:opacity-100 transition-opacity"
                 >
                   {bunInfo.revision.slice(0, 8)}
                 </a>

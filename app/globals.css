@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+.pixel {
+  image-rendering:pixelated;
+}
+
 :root {
   --background: oklch(0.985 0 0);
   --foreground: oklch(0.145 0 0);
