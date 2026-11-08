@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NavBar from "./components/navbar";
+import NavBar from "./components/nav/navbar";
 
 export const metadata: Metadata = {
   title: "Bun + Next.js Starter",
